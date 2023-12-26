@@ -1,0 +1,93 @@
+/* App.css */
+
+.app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f5f5f5;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .main {
+    flex: 1;
+    padding: 20px;
+    font-size: 1.2rem;
+  }
+  
+  .content {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .header {
+    background-color: #444;
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header-links a {
+    color: #fff;
+    margin-right: 30px;
+    text-decoration: none;
+    font-size: 2rem; /* Three times larger font size for header links */
+  }
+  
+  .sidebar {
+    width: 200px;
+    background-color: #999;
+    padding: 15px;
+    height: 100%;
+    overflow-y: auto;
+  }
+  
+  .sidebar-links a {
+    display: block;
+    margin-bottom: 15px;
+    text-decoration: none;
+    color: #555;
+    font-weight: bold;
+    font-size: 1.5rem; /* Larger font size for sidebar links */
+  }
+  
+  .sidebar-links a:hover {
+    text-decoration: underline;
+  }
+  
+  @media only screen and (max-width: 1180px) {
+    .header-links a {
+        margin-right: 25px;
+        font-size: 1.3rem; /* Three times larger font size for header links */
+      }
+  }
+
+  @media only screen and (max-width: 900px) {
+    .header-links a {
+        margin-right: 10px;
+        font-size: 0.8rem; /* Three times larger font size for header links */
+      }
+    
+      .header h1 {
+        margin-right: 0px;
+        font-size: 1rem;
+      }
+
+      .sidebar {
+        width: 100px;
+        background-color: #999;
+        padding: 8px;
+        height: 100%;
+        overflow-y: auto;
+      }
+      
+      .sidebar-links a {
+        display: block;
+        margin-bottom: 15px;
+        text-decoration: none;
+        color: #555;
+        font-weight: bold;
+        font-size: 0.9rem; /* Larger font size for sidebar links */
+      }
+  }

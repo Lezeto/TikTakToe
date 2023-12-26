@@ -1,0 +1,90 @@
+.game {
+  display: flex;
+  flex-direction: row;
+}
+
+.game-board {
+  margin-right: 20px;
+}
+
+.board-row:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.square {
+  float: left;
+  width: 150px;
+  height: 150px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 64px;
+  font-weight: bold;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.square:hover {
+  background-color: #f5f5f5;
+}
+
+.game-info {
+  font-size: 18px;
+}
+
+.game-info ol {
+  padding-left: 0;
+  list-style: none;
+}
+
+.game-info button {
+  font-size: 16px;
+  cursor: pointer;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+}
+
+.game-info button:hover {
+  background-color: #f5f5f5;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 720px) {
+  .game {
+    flex-direction: column;
+  }
+
+  .game-board {
+    margin-right: 0;
+  }
+
+  .square {
+    width: 100px;
+    height: 100px;
+    line-height: 30px;
+    font-size: 36px;
+  }
+}
+
+
+
+@media only screen and (max-width: 930px) {
+
+  .square {
+    width: 100px;
+    height: 100px;
+    line-height: 100px; /* Adjusted for better vertical alignment */
+    font-size: 36px;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+
+  .square {
+    width: 65px;
+    height: 65px;
+    line-height: 65px; /* Adjusted for better vertical alignment */
+    font-size: 22px;
+  }
+}
